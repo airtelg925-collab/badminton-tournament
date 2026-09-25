@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Badminton Tournament</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #172033;
+    }
+
+    header {
+      background: #0b7a45;
+      color: white;
+      padding: 18px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0b7a45, #16a05d);
+      color: white;
+      padding: 55px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: #0b7a45;
+      padding: 13px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 25px 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: -10px;
+    }
+
+    .card {
+      background: white;
+      padding: 22px 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      color: #0b7a45;
+      margin-bottom: 8px;
+    }
+
+    .section {
+      background: white;
+      margin-top: 25px;
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    }
+
+    .section h2 {
+      margin-bottom: 15px;
+      color: #0b7a45;
+    }
+
+    .section p {
+      line-height: 1.7;
+    }
+
+    .rules {
+      padding-left: 20px;
+      line-height: 2;
+    }
+
+    footer {
+      margin-top: 30px;
+      background: #172033;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 650px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h2 {
+        font-size: 27px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🏸 Badminton Tournament</h1>
+    <p>Official Tournament Registration</p>
+  </header>
+
+  <section class="hero">
+    <h2>🏸 Doubles Badminton Tournament</h2>
+    <p>Register your team and compete for the championship!</p>
+
+    <a href="#register" class="btn">Register Your Team</a>
+  </section>
+
+  <main class="container">
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>👥 Team</h3>
+        <p>2 Players per Team</p>
+      </div>
+
+      <div class="card">
+        <h3>💰 Entry Fee</h3>
+        <p>₹500 / Team</p>
+      </div>
+
+      <div class="card">
+        <h3>🏆 Prize</h3>
+        <p>Exciting Prizes</p>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <h2>📅 Tournament Details</h2>
+      <p>
+        <b>Date:</b> Coming Soon<br>
+        <b>Time:</b> Coming Soon<br>
+        <b>Venue:</b> Coming Soon<br>
+        <b>Format:</b> Doubles
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>📋 Tournament Rules</h2>
+
+      <ul class="rules">
+        <li>Each team must have exactly 2 players.</li>
+        <li>Players must provide correct information.</li>
+        <li>Registration is confirmed after payment verification.</li>
+        <li>Payment UTR number must be submitted.</li>
+        <li>Players must follow the tournament rules.</li>
+      </ul>
+    </div>
+
+    <div class="section" id="register">
+      <h2>📝 Team Registration</h2>
+
+      <p>
+        Registration will be available here.
+        The registration form, payment and UTR submission system
+        will be added in the next step.
+      </p>
+
+      <br>
+
+      <a href="#" class="btn">Registration Coming Soon</a>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 Badminton Tournament | All Rights Reserved
+  </footer>
+
+</body>
+</html>
